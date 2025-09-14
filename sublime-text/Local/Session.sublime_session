@@ -1,0 +1,861 @@
+{
+	"file_history":
+	[
+		"/home/shendisx/dots/sway/binds",
+		"/home/shendisx/.config/nwg-bar/screenshot.sh",
+		"/home/shendisx/.config/nwg-bar/bar-screenshot.json",
+		"/home/shendisx/.config/nwg-bar/bar-screenshot-sway.json",
+		"/usr/share/cachyos-hyprland-settings/hypr/keybinds.conf",
+		"/home/shendisx/.config/sway/config",
+		"/home/shendisx/.config/pipewire/pipewire-pulse.conf",
+		"/home/shendisx/.config/waybar/waybar.sh",
+		"/usr/share/cachyos-hyprland-settings/hypr/autostart.conf",
+		"/home/shendisx/.config/waybar/config.sway.jsonc",
+		"/home/shendisx/dots/sway/outputs",
+		"/home/shendisx/dots/sway/output",
+		"/home/shendisx/dots/sway/scripts/import-gsettings",
+		"/home/shendisx/dots/waybar/config.sway.jsonc",
+		"/home/shendisx/.config/pipewire/pipewire.conf",
+		"/home/shendisx/cachyos-hyprland-settings/etc/profile.d/Hyprland.sh",
+		"/home/shendisx/cachyos-hyprland-settings/etc/skel/.profile",
+		"/home/shendisx/.config/hypr/hyprland.conf",
+		"/usr/share/cachyos-hyprland-settings/hypr/colors.conf",
+		"/usr/share/cachyos-hyprland-settings/hypr/decorations.conf",
+		"/usr/share/cachyos-hyprland-settings/hypr/variables.conf",
+		"/etc/environment",
+		"/usr/lib/sysctl.d/99-cachyos-settings.conf",
+		"/home/shendisx/dots/sway/autostart",
+		"/home/shendisx/dots/sway/input",
+		"/var/lib/private/adguardhome/AdGuardHome.yaml",
+		"/usr/share/cachyos-hyprland-settings/hypr/defaults.conf",
+		"/etc/security/limits.conf",
+		"/etc/security/limits.d/99-realtime-privileges.conf",
+		"/home/shendisx/.config/qtile/config.py",
+		"/home/shendisx/Downloads/message.txt",
+		"/home/shendisx/Downloads/HFW DiskCache Enabler/REMOVE DIRECT STORAGE!.txt",
+		"/home/shendisx/.config/modprobed.db",
+		"/home/shendisx/.config/sway/scripts/window-opacity.sh",
+		"/etc/pacman.d/mirrorlist",
+		"/home/shendisx/.config/sway/scripts/screentoggle.sh",
+		"/home/shendisx/dotfiles-bulk/hypr/hyprland.conf",
+		"/home/shendisx/dotfiles-bulk/.gitignore",
+		"/home/shendisx/.config/konsave/profiles/myconfig/conf.yaml",
+		"/home/shendisx/.config/MangoHud/MangoHud.conf",
+		"/etc/pacman.d/cachyos-mirrorlist",
+		"/home/shendisx/Downloads/Assassins-Creed-Unity-SteamRIP.com/Read_Me_Instructions.txt",
+		"/home/shendisx/wiki/tailwind.config.cjs",
+		"/home/shendisx/.archlinux.draft.txt",
+		"/home/shendisx/wiki/astro.config.mjs",
+		"/home/shendisx/wiki/src/content/docs/configuration/gaming.mdx",
+		"/home/shendisx/Downloads/log4.txt",
+		"/usr/lib/firefox/firefox.cfg",
+		"/home/shendisx/.cache/gnome-boxes/logs/archlinux.logs",
+		"/home/shendisx/wiki/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js",
+		"/home/shendisx/CarX Street_2024-11-25_20-58-00_summary.csv",
+		"/home/shendisx/wiki/src/components/Icon.astro",
+		"/home/shendisx/wiki/node_modules/@astrojs/starlight/user-components/TabItem.astro",
+		"/home/shendisx/wiki/node_modules/@astrojs/starlight/user-components/Tabs.astro",
+		"/home/shendisx/wiki/node_modules/@astrojs/starlight/components/TabsMod.astro",
+		"/home/shendisx/wiki/node_modules/@astrojs/starlight/user-components/TabsMod.astro",
+		"/mnt/Games/Far-Cry-3-SteamRIP.com/Far Cry 3/bin/dxvk.conf",
+		"/home/shendisx/wiki/src/tailwind.css",
+		"/home/shendisx/.config/MangoHud/MangoHud_backup_mnghdc.conf",
+		"/home/shendisx/need.md",
+		"/etc/fstab",
+		"/home/shendisx/Downloads/cachyos-desktop-linux-241110.iso.sha256",
+		"/home/shendisx/wiki-gaming-draft.md",
+		"/home/shendisx/wiki/src/content/docs/configuration/sched-ext.md",
+		"/etc/default/scx.pacnew",
+		"/etc/default/scx",
+		"/home/shendisx/bpftune.txt",
+		"/home/shendisx/wiki/src/content/docs/features/kernel.md",
+		"/home/shendisx/.config/kglobalshortcutsrc",
+		"/home/shendisx/BlackFlag/drive_c/users/shendisx/Documents/Assassin's Creed IV Black Flag/GFXSettings.AC4BFSP.xml",
+		"/home/shendisx/fairlog.txt",
+		"/home/shendisx/fair-stall.txt",
+		"/home/shendisx/mousee.sh",
+		"/home/shendisx/setgov.sh",
+		"/home/shendisx/.config/fish/fishd.tmp.nYdiKU",
+		"/home/shendisx/.config/fish/fishd.tmp.hRJUkI",
+		"/home/shendisx/setperf.sh",
+		"/home/shendisx/SleepMonKde.sh",
+		"/home/shendisx/Cyb/Cyberpunk 2077/Cyberpunk2077.exe-20241112-153434-204-208.txt",
+		"/home/shendisx/dotfiles-bulk/SleepMonKde.sh",
+		"/home/shendisx/dotfiles-bulk/check_and_set_governor.sh",
+		"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-155032-404-408.txt",
+		"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/Cyberpunk2077.exe-20241112-155031-380-384.txt",
+		"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-154231-228-232.txt",
+		"/home/shendisx/Cyb/Cyberpunk 2077/Cyberpunk2077.exe-20241112-151524-204-208.txt",
+		"/home/shendisx/moeuse.sh",
+		"/home/shendisx/BlackFlag/drive_c/users/shendisx/Documents/Assassin's Creed IV Black Flag/Assassin4.ini",
+		"/etc/pacman.conf",
+		"/etc/default/grub",
+		"/home/shendisx/Downloads/bench.sh",
+		"/home/shendisx/Downloads/Factorio/bin/x64/bench.sh",
+		"/home/shendisx/Cyb/Read_Me_Instructions.txt",
+		"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-151410-224-228.txt",
+		"/home/shendisx/Assassins Creed Revelations/dxvk.conf",
+		"/home/shendisx/mouse.sh",
+		"/home/shendisx/.config/fish/config.fish",
+		"/home/shendisx/Downloads/picom.conf",
+		"/etc/makepkg.conf",
+		"/etc/mkinitcpio.conf",
+		"/etc/makepkg.conf.d/rust.conf",
+		"/home/shendisx/ente-auth/PKGBUILD",
+		"/home/shendisx/ente-auth-bin/PKGBUILD",
+		"/home/shendisx/.config/alacritty/alacritty.toml",
+		"/home/shendisx/.config/aura/config.toml",
+		"/usr/lib/modprobe.d/amdgpu.conf",
+		"/usr/share/pipewire/pipewire.conf",
+		"/home/shendisx/ente-auth-bin/PKGBUILD.rej",
+		"/tmp/tmp.XF7no0tgYE.fish",
+		"/tmp/tmp.RU3XhURP3M.fish",
+		"/home/shendisx/Downloads/0001-drm-amdgpu-WIP-test-patch-for-UVD-CS-issue.patch",
+		"/home/shendisx/thorium-browser-bin/PKGBUILD",
+		"/home/shendisx/powerusageavg.sh",
+		"/usr/lib/modprobe.d/blacklist.conf",
+		"/etc/systemd/system/rc-local.service",
+		"/etc/rc.local",
+		"/usr/bin/check_and_set_governor.sh",
+		"/home/shendisx/.local/share/applications/firefox.desktop",
+		"/usr/bin/set_cpu_threshold.sh",
+		"/etc/udev/rules.d/99-cpu-governor.rules",
+		"/home/shendisx/.ssh/id_ed25519.pub",
+		"/etc/tmpfiles.d/ksm.conf",
+		"/etc/tmpfiles.d/ondemand.conf",
+		"/home/shendisx/Downloads/0001-drm-amdgpu-fix-contiguous-handling-for-IB-parsing-v2.patch",
+		"/etc/X11/xorg.conf.d/40-libinput.conf",
+		"/home/shendisx/chromium-clang/PKGBUILD",
+		"/home/shendisx/Downloads/0001-drm-amdgpu-WIP-test-patch.patch",
+		"/home/shendisx/kaboomland-log.txt",
+		"/home/shendisx/scx/scheds/rust/scx_bpfland/src/bpf/main.bpf.c"
+	],
+	"folder_history":
+	[
+		"/home/shendisx/.config/waybar",
+		"/home/shendisx/.config/sway",
+		"/home/shendisx/wiki"
+	],
+	"last_version": 4180,
+	"last_window_id": 3,
+	"log_indexing": false,
+	"next_update_check": 1733571717,
+	"settings":
+	{
+		"new_window_full_screen": false,
+		"new_window_height": 1007.0,
+		"new_window_maximized": false,
+		"new_window_position":
+		[
+			0.0,
+			30.0
+		],
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"comment",
+						"Toggle Block Comment"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"select color",
+						"UI: Select Color Scheme"
+					],
+					[
+						"color",
+						"UI: Select Color Scheme"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"pack",
+						"Package Control: Upgrade Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/shendisx/dots/waybar/config.sway.jsonc",
+				"/home/shendisx/.config/sway/config",
+				"/usr/share/cachyos-hyprland-settings/hypr/keybinds.conf",
+				"/home/shendisx/.config/nwg-bar/bar-screenshot-sway.json",
+				"/home/shendisx/.config/nwg-bar/bar-screenshot.json",
+				"/home/shendisx/.config/nwg-bar/screenshot.sh",
+				"/home/shendisx/dots/sway/binds",
+				"/home/shendisx/.config/pipewire/pipewire-pulse.conf",
+				"/home/shendisx/.config/waybar/waybar.sh",
+				"/usr/share/cachyos-hyprland-settings/hypr/autostart.conf",
+				"/home/shendisx/.config/waybar/config.sway.jsonc",
+				"/home/shendisx/dots/sway/outputs",
+				"/home/shendisx/dots/sway/output",
+				"/home/shendisx/dots/sway/scripts/import-gsettings",
+				"/home/shendisx/.config/pipewire/pipewire.conf",
+				"/home/shendisx/cachyos-hyprland-settings/etc/profile.d/Hyprland.sh",
+				"/home/shendisx/cachyos-hyprland-settings/etc/skel/.profile",
+				"/home/shendisx/.config/hypr/hyprland.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/colors.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/decorations.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/variables.conf",
+				"/etc/environment",
+				"/usr/lib/sysctl.d/99-cachyos-settings.conf",
+				"/home/shendisx/dots/sway/autostart",
+				"/home/shendisx/dots/sway/input",
+				"/var/lib/private/adguardhome/AdGuardHome.yaml",
+				"/usr/share/cachyos-hyprland-settings/hypr/defaults.conf",
+				"/etc/security/limits.conf",
+				"/etc/security/limits.d/99-realtime-privileges.conf",
+				"/home/shendisx/.config/qtile/config.py",
+				"/home/shendisx/Downloads/message.txt",
+				"/home/shendisx/Downloads/HFW DiskCache Enabler/REMOVE DIRECT STORAGE!.txt",
+				"/home/shendisx/.config/modprobed.db",
+				"/home/shendisx/.config/sway/scripts/window-opacity.sh",
+				"/etc/pacman.d/mirrorlist",
+				"/home/shendisx/.config/sway/scripts/screentoggle.sh",
+				"/home/shendisx/dotfiles-bulk/hypr/hyprland.conf",
+				"/home/shendisx/dotfiles-bulk/.gitignore",
+				"/home/shendisx/.config/konsave/profiles/myconfig/conf.yaml",
+				"/home/shendisx/.config/MangoHud/MangoHud.conf",
+				"/etc/pacman.d/cachyos-mirrorlist",
+				"/home/shendisx/Downloads/Assassins-Creed-Unity-SteamRIP.com/Read_Me_Instructions.txt",
+				"/home/shendisx/wiki/tailwind.config.cjs",
+				"/home/shendisx/.archlinux.draft.txt",
+				"/home/shendisx/wiki/astro.config.mjs",
+				"/home/shendisx/wiki/src/content/docs/configuration/gaming.mdx",
+				"/home/shendisx/Downloads/log4.txt",
+				"/usr/lib/firefox/firefox.cfg",
+				"/home/shendisx/.cache/gnome-boxes/logs/archlinux.logs",
+				"/home/shendisx/wiki/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js",
+				"/home/shendisx/CarX Street_2024-11-25_20-58-00_summary.csv",
+				"/home/shendisx/wiki/src/components/Icon.astro",
+				"/home/shendisx/wiki/node_modules/@astrojs/starlight/user-components/TabItem.astro",
+				"/home/shendisx/wiki/node_modules/@astrojs/starlight/user-components/Tabs.astro",
+				"/home/shendisx/wiki/node_modules/@astrojs/starlight/components/TabsMod.astro",
+				"/home/shendisx/wiki/node_modules/@astrojs/starlight/user-components/TabsMod.astro",
+				"/mnt/Games/Far-Cry-3-SteamRIP.com/Far Cry 3/bin/dxvk.conf",
+				"/home/shendisx/wiki/src/tailwind.css",
+				"/home/shendisx/.config/MangoHud/MangoHud_backup_mnghdc.conf",
+				"/home/shendisx/need.md",
+				"/etc/fstab",
+				"/home/shendisx/Downloads/cachyos-desktop-linux-241110.iso.sha256",
+				"/home/shendisx/wiki-gaming-draft.md",
+				"/home/shendisx/wiki/src/content/docs/configuration/sched-ext.md",
+				"/etc/default/scx.pacnew",
+				"/etc/default/scx",
+				"/home/shendisx/bpftune.txt",
+				"/home/shendisx/wiki/src/content/docs/features/kernel.md",
+				"/home/shendisx/.config/kglobalshortcutsrc",
+				"/home/shendisx/BlackFlag/drive_c/users/shendisx/Documents/Assassin's Creed IV Black Flag/GFXSettings.AC4BFSP.xml",
+				"/home/shendisx/fairlog.txt",
+				"/home/shendisx/fair-stall.txt",
+				"/home/shendisx/mousee.sh",
+				"/home/shendisx/setgov.sh",
+				"/home/shendisx/.config/fish/fishd.tmp.nYdiKU",
+				"/home/shendisx/.config/fish/fishd.tmp.hRJUkI",
+				"/home/shendisx/setperf.sh",
+				"/home/shendisx/SleepMonKde.sh",
+				"/home/shendisx/Cyb/Cyberpunk 2077/Cyberpunk2077.exe-20241112-153434-204-208.txt",
+				"/home/shendisx/dotfiles-bulk/SleepMonKde.sh",
+				"/home/shendisx/dotfiles-bulk/check_and_set_governor.sh",
+				"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-155032-404-408.txt",
+				"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/Cyberpunk2077.exe-20241112-155031-380-384.txt",
+				"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-154231-228-232.txt",
+				"/home/shendisx/Cyb/Cyberpunk 2077/Cyberpunk2077.exe-20241112-151524-204-208.txt",
+				"/home/shendisx/moeuse.sh",
+				"/home/shendisx/BlackFlag/drive_c/users/shendisx/Documents/Assassin's Creed IV Black Flag/Assassin4.ini",
+				"/etc/pacman.conf",
+				"/etc/default/grub",
+				"/home/shendisx/Downloads/bench.sh",
+				"/home/shendisx/Downloads/Factorio/bin/x64/bench.sh",
+				"/home/shendisx/Cyb/Read_Me_Instructions.txt",
+				"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-151410-224-228.txt",
+				"/home/shendisx/Assassins Creed Revelations/dxvk.conf",
+				"/home/shendisx/mouse.sh",
+				"/home/shendisx/.config/fish/config.fish",
+				"/home/shendisx/Downloads/picom.conf",
+				"/etc/makepkg.conf",
+				"/etc/mkinitcpio.conf",
+				"/etc/makepkg.conf.d/rust.conf",
+				"/home/shendisx/ente-auth/PKGBUILD",
+				"/home/shendisx/ente-auth-bin/PKGBUILD",
+				"/home/shendisx/.config/alacritty/alacritty.toml",
+				"/home/shendisx/.config/aura/config.toml",
+				"/usr/lib/modprobe.d/amdgpu.conf",
+				"/usr/share/pipewire/pipewire.conf",
+				"/home/shendisx/ente-auth-bin/PKGBUILD.rej",
+				"/tmp/tmp.XF7no0tgYE.fish",
+				"/tmp/tmp.RU3XhURP3M.fish",
+				"/home/shendisx/Downloads/0001-drm-amdgpu-WIP-test-patch-for-UVD-CS-issue.patch",
+				"/home/shendisx/thorium-browser-bin/PKGBUILD",
+				"/home/shendisx/powerusageavg.sh",
+				"/usr/lib/modprobe.d/blacklist.conf",
+				"/etc/systemd/system/rc-local.service",
+				"/etc/rc.local",
+				"/usr/bin/check_and_set_governor.sh",
+				"/home/shendisx/.local/share/applications/firefox.desktop",
+				"/usr/bin/set_cpu_threshold.sh",
+				"/etc/udev/rules.d/99-cpu-governor.rules",
+				"/home/shendisx/.ssh/id_ed25519.pub",
+				"/etc/tmpfiles.d/ksm.conf",
+				"/etc/tmpfiles.d/ondemand.conf",
+				"/home/shendisx/Downloads/0001-drm-amdgpu-fix-contiguous-handling-for-IB-parsing-v2.patch",
+				"/etc/X11/xorg.conf.d/40-libinput.conf",
+				"/home/shendisx/chromium-clang/PKGBUILD",
+				"/home/shendisx/Downloads/0001-drm-amdgpu-WIP-test-patch.patch",
+				"/home/shendisx/kaboomland-log.txt",
+				"/home/shendisx/scx/scheds/rust/scx_bpfland/src/bpf/main.bpf.c"
+			],
+			"find":
+			{
+				"height": 51.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"font",
+					"modules-right"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 35.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.LSP Log Panel":
+			{
+				"height": 0.0
+			},
+			"output.diagnostics":
+			{
+				"height": 0.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 66.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1920.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/shendisx/dots/waybar/config.sway.jsonc",
+					"settings":
+					{
+						"buffer_size": 8044,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+					]
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"comment",
+						"Toggle Block Comment"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"select color",
+						"UI: Select Color Scheme"
+					],
+					[
+						"color",
+						"UI: Select Color Scheme"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"pack",
+						"Package Control: Upgrade Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/shendisx/.config/waybar"
+			],
+			"file_history":
+			[
+				"/home/shendisx/.config/sway/config",
+				"/usr/share/cachyos-hyprland-settings/hypr/keybinds.conf",
+				"/home/shendisx/.config/nwg-bar/bar-screenshot-sway.json",
+				"/home/shendisx/.config/nwg-bar/bar-screenshot.json",
+				"/home/shendisx/.config/nwg-bar/screenshot.sh",
+				"/home/shendisx/dots/sway/binds",
+				"/home/shendisx/.config/pipewire/pipewire-pulse.conf",
+				"/home/shendisx/.config/waybar/waybar.sh",
+				"/usr/share/cachyos-hyprland-settings/hypr/autostart.conf",
+				"/home/shendisx/.config/waybar/config.sway.jsonc",
+				"/home/shendisx/dots/sway/outputs",
+				"/home/shendisx/dots/sway/output",
+				"/home/shendisx/dots/sway/scripts/import-gsettings",
+				"/home/shendisx/dots/waybar/config.sway.jsonc",
+				"/home/shendisx/.config/pipewire/pipewire.conf",
+				"/home/shendisx/cachyos-hyprland-settings/etc/profile.d/Hyprland.sh",
+				"/home/shendisx/cachyos-hyprland-settings/etc/skel/.profile",
+				"/home/shendisx/.config/hypr/hyprland.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/colors.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/decorations.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/variables.conf",
+				"/etc/environment",
+				"/usr/lib/sysctl.d/99-cachyos-settings.conf",
+				"/home/shendisx/dots/sway/autostart",
+				"/home/shendisx/dots/sway/input",
+				"/var/lib/private/adguardhome/AdGuardHome.yaml",
+				"/usr/share/cachyos-hyprland-settings/hypr/defaults.conf",
+				"/etc/security/limits.conf",
+				"/etc/security/limits.d/99-realtime-privileges.conf",
+				"/home/shendisx/.config/qtile/config.py",
+				"/home/shendisx/Downloads/message.txt",
+				"/home/shendisx/Downloads/HFW DiskCache Enabler/REMOVE DIRECT STORAGE!.txt",
+				"/home/shendisx/.config/modprobed.db",
+				"/home/shendisx/.config/sway/scripts/window-opacity.sh",
+				"/etc/pacman.d/mirrorlist",
+				"/home/shendisx/.config/sway/scripts/screentoggle.sh",
+				"/home/shendisx/dotfiles-bulk/hypr/hyprland.conf",
+				"/home/shendisx/dotfiles-bulk/.gitignore",
+				"/home/shendisx/.config/konsave/profiles/myconfig/conf.yaml",
+				"/home/shendisx/.config/MangoHud/MangoHud.conf",
+				"/etc/pacman.d/cachyos-mirrorlist",
+				"/home/shendisx/Downloads/Assassins-Creed-Unity-SteamRIP.com/Read_Me_Instructions.txt",
+				"/home/shendisx/wiki/tailwind.config.cjs",
+				"/home/shendisx/.archlinux.draft.txt",
+				"/home/shendisx/wiki/astro.config.mjs",
+				"/home/shendisx/wiki/src/content/docs/configuration/gaming.mdx",
+				"/home/shendisx/Downloads/log4.txt",
+				"/usr/lib/firefox/firefox.cfg",
+				"/home/shendisx/.cache/gnome-boxes/logs/archlinux.logs",
+				"/home/shendisx/wiki/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js",
+				"/home/shendisx/CarX Street_2024-11-25_20-58-00_summary.csv",
+				"/home/shendisx/wiki/src/components/Icon.astro",
+				"/home/shendisx/wiki/node_modules/@astrojs/starlight/user-components/TabItem.astro",
+				"/home/shendisx/wiki/node_modules/@astrojs/starlight/user-components/Tabs.astro",
+				"/home/shendisx/wiki/node_modules/@astrojs/starlight/components/TabsMod.astro",
+				"/home/shendisx/wiki/node_modules/@astrojs/starlight/user-components/TabsMod.astro",
+				"/mnt/Games/Far-Cry-3-SteamRIP.com/Far Cry 3/bin/dxvk.conf",
+				"/home/shendisx/wiki/src/tailwind.css",
+				"/home/shendisx/.config/MangoHud/MangoHud_backup_mnghdc.conf",
+				"/home/shendisx/need.md",
+				"/etc/fstab",
+				"/home/shendisx/Downloads/cachyos-desktop-linux-241110.iso.sha256",
+				"/home/shendisx/wiki-gaming-draft.md",
+				"/home/shendisx/wiki/src/content/docs/configuration/sched-ext.md",
+				"/etc/default/scx.pacnew",
+				"/etc/default/scx",
+				"/home/shendisx/bpftune.txt",
+				"/home/shendisx/wiki/src/content/docs/features/kernel.md",
+				"/home/shendisx/.config/kglobalshortcutsrc",
+				"/home/shendisx/BlackFlag/drive_c/users/shendisx/Documents/Assassin's Creed IV Black Flag/GFXSettings.AC4BFSP.xml",
+				"/home/shendisx/fairlog.txt",
+				"/home/shendisx/fair-stall.txt",
+				"/home/shendisx/mousee.sh",
+				"/home/shendisx/setgov.sh",
+				"/home/shendisx/.config/fish/fishd.tmp.nYdiKU",
+				"/home/shendisx/.config/fish/fishd.tmp.hRJUkI",
+				"/home/shendisx/setperf.sh",
+				"/home/shendisx/SleepMonKde.sh",
+				"/home/shendisx/Cyb/Cyberpunk 2077/Cyberpunk2077.exe-20241112-153434-204-208.txt",
+				"/home/shendisx/dotfiles-bulk/SleepMonKde.sh",
+				"/home/shendisx/dotfiles-bulk/check_and_set_governor.sh",
+				"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-155032-404-408.txt",
+				"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/Cyberpunk2077.exe-20241112-155031-380-384.txt",
+				"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-154231-228-232.txt",
+				"/home/shendisx/Cyb/Cyberpunk 2077/Cyberpunk2077.exe-20241112-151524-204-208.txt",
+				"/home/shendisx/moeuse.sh",
+				"/home/shendisx/BlackFlag/drive_c/users/shendisx/Documents/Assassin's Creed IV Black Flag/Assassin4.ini",
+				"/etc/pacman.conf",
+				"/etc/default/grub",
+				"/home/shendisx/Downloads/bench.sh",
+				"/home/shendisx/Downloads/Factorio/bin/x64/bench.sh",
+				"/home/shendisx/Cyb/Read_Me_Instructions.txt",
+				"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-151410-224-228.txt",
+				"/home/shendisx/Assassins Creed Revelations/dxvk.conf",
+				"/home/shendisx/mouse.sh",
+				"/home/shendisx/.config/fish/config.fish",
+				"/home/shendisx/Downloads/picom.conf",
+				"/etc/makepkg.conf",
+				"/etc/mkinitcpio.conf",
+				"/etc/makepkg.conf.d/rust.conf",
+				"/home/shendisx/ente-auth/PKGBUILD",
+				"/home/shendisx/ente-auth-bin/PKGBUILD",
+				"/home/shendisx/.config/alacritty/alacritty.toml",
+				"/home/shendisx/.config/aura/config.toml",
+				"/usr/lib/modprobe.d/amdgpu.conf",
+				"/usr/share/pipewire/pipewire.conf",
+				"/home/shendisx/ente-auth-bin/PKGBUILD.rej",
+				"/tmp/tmp.XF7no0tgYE.fish",
+				"/tmp/tmp.RU3XhURP3M.fish",
+				"/home/shendisx/Downloads/0001-drm-amdgpu-WIP-test-patch-for-UVD-CS-issue.patch",
+				"/home/shendisx/thorium-browser-bin/PKGBUILD",
+				"/home/shendisx/powerusageavg.sh",
+				"/usr/lib/modprobe.d/blacklist.conf",
+				"/etc/systemd/system/rc-local.service",
+				"/etc/rc.local",
+				"/usr/bin/check_and_set_governor.sh",
+				"/home/shendisx/.local/share/applications/firefox.desktop",
+				"/usr/bin/set_cpu_threshold.sh",
+				"/etc/udev/rules.d/99-cpu-governor.rules",
+				"/home/shendisx/.ssh/id_ed25519.pub",
+				"/etc/tmpfiles.d/ksm.conf",
+				"/etc/tmpfiles.d/ondemand.conf",
+				"/home/shendisx/Downloads/0001-drm-amdgpu-fix-contiguous-handling-for-IB-parsing-v2.patch",
+				"/etc/X11/xorg.conf.d/40-libinput.conf",
+				"/home/shendisx/chromium-clang/PKGBUILD",
+				"/home/shendisx/Downloads/0001-drm-amdgpu-WIP-test-patch.patch",
+				"/home/shendisx/kaboomland-log.txt",
+				"/home/shendisx/scx/scheds/rust/scx_bpfland/src/bpf/main.bpf.c"
+			],
+			"find":
+			{
+				"height": 51.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"font",
+					"modules-right"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/home/shendisx/.config/waybar"
+				}
+			],
+			"groups":
+			[
+				{
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/shendisx/dots/waybar/config.sway.jsonc",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 8044,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2424,
+										2424
+									]
+								],
+								"settings":
+								{
+									"auto_complete_triggers":
+									[
+										{
+											"characters": "<",
+											"selector": "text.html, text.xml"
+										},
+										{
+											"rhs_empty": true,
+											"selector": "punctuation.accessor"
+										}
+									],
+									"lsp_active": true,
+									"lsp_uri": "file:///home/shendisx/dots/waybar/config.sway.jsonc",
+									"syntax": "Packages/JSON/JSON.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1651.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 35.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.LSP Log Panel":
+			{
+				"height": 0.0
+			},
+			"output.diagnostics":
+			{
+				"height": 0.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,0,0,1920,1007,1920,1080,0",
+			"project": "",
+			"replace":
+			{
+				"height": 66.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+				"lsp_show_inlay_hints": false
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 3,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
