@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -54,12 +54,13 @@ input "9610:39:SINOWEALTH_Wired_Gaming_Mouse" {
        accel_profile flat
        pointer_accel 0
    }
-input "1183:14:Chicony_Compaq_Internet_Keyboard" {
+input "type:keyboard" {
 	xkb_layout latam
+    xkb_numlock enabled
+    repeat_delay 200
+    repeat_rate 50
+
 }
-input type:keyboard xkb_numlock enabled
-input type:keyboard repeat_delay 200
-input type:keyboard repeat_rate 50
 
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
@@ -76,7 +77,7 @@ input type:keyboard repeat_rate 50
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+space exec rofi -show drun -theme $HOME/.config/rofi/launchers/type-1/style-1.rasi
+    bindsym $mod+R exec fuzzel
     
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -200,11 +201,7 @@ mode "resize" {
     bindsym Up resize shrink height 10px
     bindsym Right resize grow width 10px
 
-    # Return to default mode
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
 
 # Grimshot
 
@@ -217,7 +214,6 @@ bindsym $mod+e exec thunar
 # Waybar
 
 bindsym $mod+o exec killall -SIGUSR2 waybar
-
 
 # Monitor Scripts
 
@@ -249,18 +245,9 @@ bindsym $mod+shift+s exec --no-startup-id nwg-bar -t bar-screenshot-sway.json
 # Read `man 5 sway-bar` for more information about this section.
 
 # Autostart
-exec systemctl --user set-environment XDG_CURRENT_DESKTOP=sway
-exec systemctl --user import-environment DISPLAY \
-                                         SWAYSOCK \
-                                         WAYLAND_DISPLAY \
-                                         XDG_CURRENT_DESKTOP
-
-# Update systemd user services with the current environment
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
 exec hash dbus-update-activation-environment 2>/dev/null && \
-     dbus-update-activation-environment --systemd DISPLAY \
-                                                  SWAYSOCK \
-                                                  XDG_CURRENT_DESKTOP=sway \
-                                                  WAYLAND_DISPLAY
+dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
 exec /usr/bin/fuzzel-polkit-agent
 exec easyeffects --gapplication-service
 exec mako
@@ -274,7 +261,6 @@ exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ss
 
 include /etc/sway/config.d/*
 smart_gaps on
-smart_borders off
 focus_follows_mouse yes
 popup_during_fullscreen smart
 
@@ -330,14 +316,25 @@ assign [app_id="org.telegram.desktop"]  3
 assign [class="Steam"]                  4
 assign [class="discord"]                4
 
-# Set the default border width
-default_border pixel 2
-
-# Configure the focused window border color
-client.focused "#00ff00" "#00ff00" "#ffffff"  
-
-# Optionally, configure the unfocused window border color
-client.unfocused "#000000" "#000000" "#ffffff" 
-
 bindsym Control_R exec xdotool keydown Control_R
 bindsym --release Control_R exec xdotool keyup Control_R
+
+# Hide titlebar on windows:
+default_border pixel 2
+# only show border if there are more than 1 running apps.
+smart_borders on
+
+# define colors for windows:
+set $red #A24F5F
+set $blue #597A9A
+set $bground #080A0E
+set $fground #BCC4C9
+
+# Using child_border instead of border to set color.
+# class             border   bground  text     indicator  child_border
+client.focused          $bground $bground $fground $blue      $blue
+client.focused_inactive $bground $bground $fground $bground   $bground
+client.unfocused        $bground $bground $fground $bground   $bground
+client.urgent           $bground $bground $fground $bground   $red
+client.placeholder      $bground $bground $fground $bground   $bground
+client.background       $bground

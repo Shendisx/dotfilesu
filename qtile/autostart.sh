@@ -1,7 +1,6 @@
 #!/bin/bash
 
 /usr/bin/lxqt-policykit-agent &
-/usr/bin/copyq &
 /usr/bin/dunst &
 /usr/bin/easyeffects --gapplication-service &
 xset r rate 220 60 &

@@ -208,11 +208,22 @@ for_window [window_type="menu"]                         floating enable
 ########################################################################
 
 
-bindsym XF86AudioRaiseVolume exec "pamixer -ui 8 && pamixer --get-volume > /tmp/xobpipe"
-bindsym XF86AudioLowerVolume exec "pamixer -ud 8 && pamixer --get-volume > /tmp/xobpipe"
-# mute sound
-bindsym XF86AudioMute exec "amixer sset Master toggle | sed -En '/\[on\]/ s/.*\[([0-9]+)%\].*/\1/ p; /\[off\]/ s/.*/0/p' | head -1 > /tmp/xobpipe"
+# Mute volume
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Decrease volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+# Increase volume
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# Play/Pause
+
 bindsym XF86AudioPlay exec playerctl play-pause
+
+# Screen standby
+
+bindsym Scroll_Lock exec xset dpms force standby
 
 bindsym $mod+Shift+p exec gnome-calculator
 #bindsym $mod+p exec ~/.scripts/dmshot

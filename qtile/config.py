@@ -56,20 +56,12 @@ keys = [
 
     # Media controls
     Key([], "print", lazy.spawn('flameshot gui'), desc="Take a screenshot"),
-    Key([], "XF86AudioRaiseVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ +7%'), desc="Up the volume"),
-    Key([], "XF86AudioLowerVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ -7%'), desc="Down the volume"),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ +10%'), desc="Up the volume"),
+    Key([], "XF86AudioLowerVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ -10%'), desc="Down the volume"),
     Key([], "XF86AudioMute", lazy.spawn('pactl set-sink-mute @DEFAULT_SINK@ toggle'), desc="Toggle mute"),
     Key([], "XF86AudioPlay", lazy.spawn('playerctl play-pause'), desc="Play-pause"),  
-    Key([], "XF86AudioNext", lazy.spawn(["sh", "-c", "scxctl start -s flash"]), desc="Execute Flash"), 
-    Key([mod], "XF86AudioNext", lazy.spawn(["sh", "-c", "scxctl switch -s bpfland"]), desc="Execute BPFLAND"), 
-    Key([], "XF86AudioPrev", lazy.spawn(["sh", "-c", "scxctl switch -s cosmos"]), desc="Execute Cosmos"),
-    Key([], "XF86AudioStop", lazy.spawn(["sh", "-c", "scxctl stop"]), desc='Stop running scx_scheduler'),
-    Key([], "XF86Tools", lazy.spawn(["sh", "-c", "scxctl switch -s lavd"]), desc='Execute LAVD'),
-    Key([mod, "control"], "q", lazy.spawn(["sh", "-c", "scxctl switch -m auto"]), desc="Switch to auto mode"),
-    Key([mod, "control"], "w", lazy.spawn(["sh", "-c", "scxctl switch -m gaming"]), desc="Switch to gaming mode"),
-    Key([mod, "control"], "e", lazy.spawn(["sh", "-c", "scxctl switch -m lowlatency"]), desc="Switch to lowlatency mode"),
     Key([mod], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g performance"]), desc='Enable performance governor'),
-    Key([], "Scroll_Lock", lazy.spawn(["sh", "-c", "sleep 1 && xset dpms force standby"]), desc='Enable performance governor'),
+    Key([], "Scroll_Lock", lazy.spawn(["sh", "-c", "sleep 0.5 && xset dpms force standby"]), desc='Monitor sleep mode'),
 ]
 
 groups = [Group(f"{i+1}", label="⬤") for i in range(9)] #Be careful modifying this, otherwise qtile config will break
@@ -96,6 +88,24 @@ for i in groups:
 ###𝙇𝙖𝙮𝙤𝙪𝙩###
 
 layouts = [
+    layout.Bsp(
+        border_focus = '#00DC6C',
+        border_normal = '#1F1D2E',
+        margin = 0,
+        border_width = 3,
+    ),
+    layout.Matrix(
+       border_focus = '#00DC6C',
+       border_normal = '#1F1D2E',
+       margin = 0,
+       border_width = 3,
+    ),
+    layout.MonadWide(
+        border_focus = '#00DC6C',
+        border_normal = '#1F1D2E',
+        margin = 0,
+        border_width = 3,
+    ),
     layout.Columns(
         margin = 0,
         border_focus = '#00DC6C',
@@ -119,19 +129,6 @@ layouts = [
     # Try more layouts by unleashing below layouts
    #  layout.Stack(num_stacks=2),
    #  layout.Bsp(),
-     layout.Matrix(
-        border_focus = '#00DC6C',
-        border_normal = '#1F1D2E',
-        margin = 0,
-        border_width = 3,
-    ),
-     
-    layout.MonadWide(
-        border_focus = '#00DC6C',
-        border_normal = '#1F1D2E',
-        margin = 0,
-        border_width = 3,
-    ),
     layout.Tile(
         border_focus = '#00DC6C',
         border_normal = '#1F1D2E',
@@ -148,7 +145,7 @@ widget_defaults = dict(
     fontsize = 12,
     padding = 4,
 )
-extension_defaults = [ widget_defaults.copy()]
+extension_defaults = widget_defaults.copy()
 
 
 def open_launcher():
