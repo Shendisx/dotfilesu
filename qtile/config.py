@@ -154,214 +154,205 @@ def open_launcher():
 def open_btop():
     qtile.cmd_spawn("alacritty --hold -e btop")
 
+def search():
+    qtile.cmd_spawn("rofi -show drun")
+
+def power():
+    qtile.cmd_spawn("sh -c ~/.config/rofi/scripts/power")
+
 # █▄▄ ▄▀█ █▀█
 # █▄█ █▀█ █▀▄
  
 screens = [
+
     Screen(
-        top = bar.Bar(
-            [   
-                widget.Spacer(
-                    length = 18,
-                    background = '#033C4B',
-                ),
-                
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/launch_Icon.png',
-                    background = '#033C4B',
-                    mouse_callbacks = {'Button1': open_launcher},
+        top=bar.Bar(
+            [
+                widget.Spacer(length=15,
+                    background='#282738',
                 ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/6.png',
+                    filename='~/.config/qtile/Assets/launch_Icon.png',
+                    margin=2,
+                    background='#282738',
+                    mouse_callbacks={"Button1": power},
+                ),
+
+                widget.Image(
+                    filename='~/.config/qtile/Assets/6.png',
                 ),
 
                 widget.GroupBox(
-                    fontsize = 16,
-                    borderwidth = 0,
-                    highlight_method = 'block',
-                    active = '#56D9C7', #Active workspaces circle color
-                    block_highlight_text_color = "#00F076", #Current workspace circle color
-                    highlight_color = '#4B427E',
-                    inactive = '#052A25', #Empty workspace circle
-                    foreground = '#046F5F',
-                    background = '#046F5F',
-                    this_current_screen_border = '#00361A', #Circle background color
-                    this_screen_border = '#52548D',
-                    other_current_screen_border = '#52548D',
-                    other_screen_border = '#52548D',
-                    urgent_border = '#52548D',
-                    rounded = True,
-                    disable_drag = True,
-                 ),
+                    font="JetBrainsMono Nerd Font",
+                    fontsize=24,
+                    borderwidth=3,
+                    highlight_method='block',
+                    active='#CAA9E0',
+                    block_highlight_text_color="#91B1F0",
+                    highlight_color='#353446',
+                    inactive='#282738',
+                    foreground='#4B427E',
+                    background='#353446',
+                    this_current_screen_border='#353446',
+                    this_screen_border='#353446',
+                    other_current_screen_border='#353446',
+                    other_screen_border='#353446',
+                    urgent_border='#353446',
+                    rounded=True,
+                    disable_drag=True,
+                ),
 
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',
+                widget.Spacer(
+                    length=8,
+                    background='#353446',
                 ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/2.png',
+                    filename='~/.config/qtile/Assets/1.png',
                 ),
+
 
                 widget.CurrentLayout(
-                    background ='#046F5F',
-                    font = 'IBM Plex Mono Medium',
-                    fontsize = 15,
-                    padding = 0,
+                    custom_icon_paths=["~/.config/qtile/Assets/layout"],
+                    background='#353446',
+                    scale=0.50,
                 ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',                
+                    filename='~/.config/qtile/Assets/5.png',
+                ),
+
+                widget.TextBox(
+                    text=" ",
+                    font="Font Awesome 6 Free Solid",
+                    fontsize=20,
+                    background='#282738',
+                    foreground='#CAA9E0',
+                    mouse_callbacks={"Button1": search},
+                ),
+
+                widget.TextBox(
+                    fmt='Search',
+                    background='#282738',
+                    font="JetBrainsMono Nerd Font Bold",
+                    fontsize=13,
+                    foreground='#CAA9E0',
+                    mouse_callbacks={"Button1": search},
                 ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/2.png',
+                    filename='~/.config/qtile/Assets/4.png',
                 ),
 
                 widget.WindowName(
-                    background = '#046F5F',
-                    format = "{name}",
-                    font = 'IBM Plex Mono Medium',
-                    fontsize = 14,
-                    empty_group_string = 'Desktop',
-                    padding = 0,
+                    background='#353446',
+                    font="JetBrainsMono Nerd Font Bold",
+                    fontsize=13,
+                    empty_group_string="Desktop",
+                    max_chars=130,
+                    foreground='#CAA9E0',
                 ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',                
-                ),  
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/1.png',                
-                    background = '#52548D',
+                    filename='~/.config/qtile/Assets/3.png',
                 ),
 
-                widget.CPU(
-                    font = "IBM Plex Mono Medium",
-                    format='CPU:({load_percent:.1f}%/{freq_current}GHz)',
-                    fontsize = 15,
-                    margin = 0,
-                    padding = 0,
-                    background = '#046F5F',
-                    mouse_callbacks = {'Button1': open_btop},
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/2.png',                
-                    background = '#52548D',
-                ),  
-  
                 widget.Systray(
-                    background = '#046F5F',
-                    icon_size = 24,
-                    padding = 3,
+                    background='#282738',
+                    fontsize=2,
+                ),
+
+                widget.TextBox(
+                    text=' ',
+                    background='#282738',
                 ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',
+                    filename='~/.config/qtile/Assets/6.png',
+                    background='#353446',
                 ),
 
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/2.png',                
-                    background = '#52548D',
-                ),                    
-                                                
-                widget.Spacer(
-                    length = 0,
-                    background = '#046f5f',
-                ),  
-               
+                widget.TextBox(
+                    text="",
+                    font="Font Awesome 6 Free Solid",
+                    fontsize=13,
+                    background='#353446',
+                    foreground='#CAA9E0',
+                ),
+
                 widget.Memory(
-                    format = 'RAM:({MemUsed:.0f}MB/{MemTotal:.0f}MB)',
-                    font = "IBM Plex Mono Medium",
-                    fontsize = 15,
-                    padding = 0,
-                    background = '#046F5F',
-                    mouse_callbacks = {'Button1': open_btop},
+                    background='#353446',
+                    format='{MemUsed: .0f}{mm}',
+                    foreground='#CAA9E0',
+                    font="JetBrainsMono Nerd Font Bold",
+                    fontsize=13,
+                    update_interval=5,
+                ),
+
+                widget.Image(
+                    filename='~/.config/qtile/Assets/2.png',
                 ),
 
                 widget.Spacer(
-                    length = 6,
-                    background = '#046f5f',
-                ),  
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/Bar-Icons/volume.svg',
-                    background = '#046F5F',
-                    margin_y = 3,
-                    scale = True,
-                    mouse_callbacks = {'Button1': open_btop},
+                    length=8,
+                    background='#353446',
                 ),
 
-                widget.Spacer(
-                    length = 4,
-                    background = '#046f5f',
-                ), 
-                
-                widget.PulseVolume(
-                    font= 'IBM Plex Mono Medium',
-                    fontsize = 15,
-                    padding = 0,
-                    background = '#046F5F',
+                widget.TextBox(
+                    text=" ",
+                    font="Font Awesome 6 Free Solid",
+                    fontsize=27,
+                    background='#353446',
+                    foreground='#CAA9E0',
                 ),
 
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',
-                ),                
-
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/1.png',                
-                    background = '#4B427E',
+                widget.Volume(
+                    font="JetBrainsMono Nerd Font Bold",
+                    fontsize=13,
+                    background='#353446',
+                    foreground='#CAA9E0',
+                    mute_command="pamixer --toggle-mute",
+                    volume_up_command="pamixer -i 5",
+                    volume_down_command="pamixer -d 5",
+                    get_volume_command="pamixer --get-volume-human",
+                    update_interval=0.2,
+                    unmute_format="{volume}%",
+                    mute_format="M",
                 ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/Bar-Icons/calendar.svg',
-                    background = '#046F5F',
-                    margin_y = 3,
-                    scale = True,
+                    filename='~/.config/qtile/Assets/5.png',
+                    background='#353446',
                 ),
 
-                widget.Spacer(
-                    length = 6,
-                    background = '#046f5f',
-                ), 
-        
-                widget.Clock(
-                    format = '%d/%m/%y ', #Here you can change between USA or another timezone
-                    background = '#046f5f',
-                    font = "IBM Plex Mono Medium",
-                    fontsize = 15,
-                    padding = 0,
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/Bar-Icons/clock.svg',
-                    background = '#046F5F',
-                    margin_y = 3,
-                    margin_x = 5,
-                    scale = True,
+                widget.TextBox(
+                    text=" ",
+                    font="Font Awesome 6 Free Solid",
+                    fontsize=13,
+                    background='#282738',
+                    foreground='#CAA9E0',
                 ),
 
                 widget.Clock(
-                    format = '%H:%M', 
-                    background = '#046f5f',
-                    font = "IBM Plex Mono Medium",
-                    fontsize = 15,
-                    padding = 0,
+                    format='%I:%M %p',
+                    background='#282738',
+                    foreground='#CAA9E0',
+                    font="JetBrainsMono Nerd Font Bold",
+                    fontsize=13,
                 ),
 
                 widget.Spacer(
-                    length = 18,
-                    background = '#046f5f',
+                    length=18,
+                    background='#282738',
                 ),
+
             ],
-            30,  # Bar size (all axis)
-            margin = [0,8,6,8] # Bar margin (Top,Right,Bottom,Left)
+            30,
+            border_color='#282738',
+            border_width=[0,0,0,0],
+            margin=[0,60,6,60],
+
         ),
     ),
 ]
