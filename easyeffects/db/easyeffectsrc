@@ -1,0 +1,19 @@
+[Spectrum]
+height=250
+nPoints=300
+
+[StreamInputs]
+inputDevice=alsa_output.pci-0000_00_14.2.analog-stereo
+
+[StreamOutputs]
+mostUsedPresets=Test 2
+outputDevice=alsa_output.pci-0000_00_14.2.analog-stereo
+plugins=equalizer#0,bass_enhancer#0,filter#0,limiter#0
+usedPresets=Test 2:1
+visiblePage=pluginsPage
+visiblePlugin=equalizer#0
+
+[Window]
+height=1016
+lastLoadedOutputPreset=Test 2
+width=1902

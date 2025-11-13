@@ -205,7 +205,7 @@ mode "resize" {
 
 # Grimshot
 
-bindsym Print exec grim -g "$(slurp)" - | swappy -f -
+bindsym Print exec grim -g "$(slurp -b '#2E2A1E55' -c '#fb751bff')" -t ppm - | satty -f -
 bindsym Shift+Print exec grimshot copy screen
 
 # Thunar
@@ -217,10 +217,10 @@ bindsym $mod+o exec killall -SIGUSR2 waybar
 
 # Monitor Scripts
 
-bindsym XF86Tools exec ~/.config/sway/scripts/screentoggle.sh | sudo cpupower frequency-set -g powersave
-bindsym XF86AudioStop exec sudo cpupower frequency-set -g schedutil
-bindsym XF86AudioNext exec sudo cpupower frequency-set -g performance
-bindsym XF86AudioPrev exec sudo cpupower frequency-set -g powersave
+bindsym Scroll_Lock exec ~/.config/sway/scripts/screentoggle.sh 
+#bindsym XF86AudioStop exec sudo cpupower frequency-set -g schedutil
+#bindsym XF86AudioNext exec sudo cpupower frequency-set -g performance
+#bindsym XF86AudioPrev exec sudo cpupower frequency-set -g powersave
 
 # Mute volume
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -252,11 +252,12 @@ exec /usr/bin/fuzzel-polkit-agent
 exec easyeffects --gapplication-service
 exec mako
 #exec corectrl
-exec /usr/bin/swayosd-server & disown
+#exec /usr/bin/swayosd-server & disown
 exec /usr/bin/copyq & disown
-exec_always autotiling -w 1 2 3 4 5 6 7 8 9
+exec_always autotiling-rs -w 1 2 3 4 5 6 7 8 9
 exec /usr/bin/waybar -c $HOME/.config/waybar/sway/config.jsonc -s $HOME/.config/waybar/sway/style.css
 exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
+exec wl-clip-persist --clipboard regular --reconnect-tries 0 >/dev/null 2>&1
 # Sway variables
 
 include /etc/sway/config.d/*
@@ -270,6 +271,7 @@ popup_during_fullscreen smart
 for_window [class="Yad" instance="yad"] floating enable
 for_window [app_id="thunar"] floating enable
 for_window [app_id="Alacritty"] floating enable
+for_window [app_id="foot"] floating enable
 for_window [app_id="org.gnome.Nautilus"] floating enable
 for_window [app_id="yad"] floating enable
 for_window [app_id="blueman-manager"] floating enable,  resize set width 40 ppt height 30 ppt

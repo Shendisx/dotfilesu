@@ -1,0 +1,9 @@
+[soe][Filter#0]
+bypass=true
+equalMode=1
+frequency=150
+gain=-30
+mode=2
+quality=0.8999999761581421
+slope=4
+type=1
