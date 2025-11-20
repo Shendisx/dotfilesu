@@ -30,21 +30,21 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+#bindsym $mod+v split v
 
-bindsym $mod+t split toggle
+#bindsym $mod+t split toggle
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
 #bindsym $mod+e layout toggle split
 bindsym $mod+Shift+w sticky toggle
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+v floating toggle
 
 # change focus between tiling / floating windows
 #bindsym $mod+space focus mode_toggle
@@ -268,6 +268,6 @@ exec --no-startup-id copyq
 exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 exec --no-startup-id /usr/bin/lxqt-policykit-agent
 exec_always mkfifo /tmp/xobpipe && tail -f /tmp/xobpipe | xob -t 2170 & disown
-exec --no-startup-id autotiling
+exec --no-startup-id autotiling-rs
 exec --no-startup-id easyeffects --gapplication-service
 exec --no-startup-id xset r rate 220 60 & xset s off &

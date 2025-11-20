@@ -1,6 +1,9 @@
-
-
 source /usr/share/cachyos-fish-config/cachyos-config.fish
+
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
 set -x --universal MESA_SHADER_CACHE_MAX_SIZE '12G'
 alias cat='bat'
@@ -29,23 +32,3 @@ alias whichpackage='pacman -Qo'
 alias auracheck='aura -Syu && aura -Akaxu'
 alias ff='fzf_file_search'
 set -U EDITOR subl
-
-# overwrite greeting
-# potentially disabling fastfetch
-function fish_greeting
-end
-
-function config_ssh_agent
-  # Start the SSH agent and capture the socket path
-  set agent_socket (ssh-agent -s)
-
-  # Check for successful start (exit code 0)
-  if test $status -eq 0
-    # Set the SSH_AUTH_SOCK environment variable
-    set -gx SSH_AUTH_SOCK $agent_socket
-    echo "SSH agent started and configured for Fish shell."
-  else
-    echo "Error starting SSH agent."
-  end
-end
-

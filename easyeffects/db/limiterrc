@@ -4,6 +4,5 @@ attack=1
 dithering=8
 gainBoost=false
 lookahead=8
-outputGain=-0.5
 release=20
 threshold=-2.8
