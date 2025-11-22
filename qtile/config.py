@@ -64,7 +64,7 @@ keys = [
     Key([], "XF86AudioLowerVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ -10%'), desc="Down the volume"),
     Key([], "XF86AudioMute", lazy.spawn('pactl set-sink-mute @DEFAULT_SINK@ toggle'), desc="Toggle mute"),
     Key([], "XF86AudioPlay", lazy.spawn('playerctl play-pause'), desc="Play-pause"),  
-    Key([], "Scroll_Lock", lazy.spawn(["sh", "-c", "sleep 0.5 && xset dpms force standby"]), desc='Monitor sleep mode'),
+    Key([], "Scroll_Lock", lazy.spawn(["sh", "-c", "sleep 0.5 && systemctl suspend"]), desc='Monitor sleep mode'),
 ]
 
 # Add key bindings to switch VTs in Wayland.

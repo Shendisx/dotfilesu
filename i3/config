@@ -269,5 +269,5 @@ exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 exec --no-startup-id /usr/bin/lxqt-policykit-agent
 exec_always mkfifo /tmp/xobpipe && tail -f /tmp/xobpipe | xob -t 2170 & disown
 exec --no-startup-id autotiling-rs
-exec --no-startup-id easyeffects --gapplication-service
+exec --no-startup-id jamesdsp
 exec --no-startup-id xset r rate 220 60 & xset s off &
