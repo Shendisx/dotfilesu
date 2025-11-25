@@ -217,7 +217,9 @@ bindsym $mod+o exec killall -SIGUSR2 waybar
 
 # Monitor Scripts
 
-bindsym Scroll_Lock exec ~/.config/sway/scripts/screentoggle.sh 
+#bindsym Scroll_Lock exec ~/.config/sway/scripts/screentoggle.sh
+bindsym Scroll_Lock exec systemctl suspend
+bindsym Pause exec audiofix
 #bindsym XF86AudioStop exec sudo cpupower frequency-set -g schedutil
 #bindsym XF86AudioNext exec sudo cpupower frequency-set -g performance
 #bindsym XF86AudioPrev exec sudo cpupower frequency-set -g powersave
