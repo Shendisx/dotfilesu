@@ -1,6 +1,7 @@
 set $mod Mod4
 font pango:Hack 9
 floating_modifier $mod
+hide_edge_borders smart
 
 # start a terminal
 set $term alacritty
@@ -11,7 +12,7 @@ bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 #bindsym ctrl+space exec rofi -show run
-bindsym $mod+r exec "rofi -show drun -theme $HOME/.config/rofi/launchers/type-1/style-1.rasi"
+bindsym $mod+r exec "rofi -show drun"
 #bindsym ctrl+space exec dmenu_run
 
 # alternatively, you can use the cursor keys:
@@ -224,7 +225,8 @@ bindsym XF86AudioPlay exec playerctl play-pause
 
 # Screen standby
 
-bindsym Scroll_Lock exec xset dpms force standby
+bindsym Scroll_Lock exec systemctl suspend
+bindsym Pause exec audiofix
 
 bindsym $mod+Shift+p exec gnome-calculator
 #bindsym $mod+p exec ~/.scripts/dmshot

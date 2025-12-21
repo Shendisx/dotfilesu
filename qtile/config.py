@@ -4,6 +4,7 @@ import libqtile.resources
 from libqtile import bar, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
+from libqtile.backend.wayland import InputConfig
 
 os.system("bash ~/.config/qtile/autostart.sh")
 mod = "mod4"
@@ -58,7 +59,7 @@ keys = [
     Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    Key([mod], "r", lazy.spawn('rofi -show drun'), desc="Spawn a command using a prompt widget"),
     Key([], "print", lazy.spawn('flameshot gui'), desc="Take a screenshot"),
     Key([], "XF86AudioRaiseVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ +10%'), desc="Up the volume"),
     Key([], "XF86AudioLowerVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ -10%'), desc="Down the volume"),
@@ -196,6 +197,11 @@ auto_fullscreen = True
 focus_on_window_activation = "smart"
 focus_previous_on_window_remove = False
 reconfigure_screens = True
+
+wl_input_rules = {
+    "*": InputConfig(accel_profile="flat"),
+    "type:keyboard": InputConfig(kb_layout="latam"),
+}
 
 # If things like steam games want to auto-minimize themselves when losing
 # focus, should we respect this or not?

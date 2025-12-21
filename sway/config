@@ -58,7 +58,7 @@ input "type:keyboard" {
 	xkb_layout latam
     xkb_numlock enabled
     repeat_delay 200
-    repeat_rate 50
+    repeat_rate 100
 
 }
 
@@ -77,7 +77,7 @@ input "type:keyboard" {
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+R exec fuzzel
+    bindsym $mod+R exec qs -c noctalia-shell ipc call launcher toggle
     
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -206,7 +206,7 @@ mode "resize" {
 # Grimshot
 
 bindsym Print exec grim -g "$(slurp -b '#2E2A1E55' -c '#fb751bff')" -t ppm - | satty -f -
-bindsym Shift+Print exec grimshot copy screen
+bindsym Shift+Print exec hyprshot -z -m region
 
 # Thunar
 bindsym $mod+e exec thunar
@@ -225,20 +225,20 @@ bindsym Pause exec audiofix
 #bindsym XF86AudioPrev exec sudo cpupower frequency-set -g powersave
 
 # Mute volume
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMute exec qs -c noctalia-shell ipc call volume muteOutput
 
 # Decrease volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioLowerVolume exec qs -c noctalia-shell ipc call volume decrease
 
 # Increase volume
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioRaiseVolume exec qs -c noctalia-shell ipc call volume increase
 
 # Play/Pause
 
-bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPlay exec qs -c noctalia-shell ipc call media playPause
 
 # Screenshot
-bindsym $mod+s exec --no-startup-id /usr/bin/grimshot --notify copy output
+bindsym $mod+s exec --no-startup-id flameshot gui
 bindsym $mod+shift+s exec --no-startup-id nwg-bar -t bar-screenshot-sway.json
 
 #
@@ -250,16 +250,17 @@ bindsym $mod+shift+s exec --no-startup-id nwg-bar -t bar-screenshot-sway.json
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
 exec hash dbus-update-activation-environment 2>/dev/null && \
 dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
-exec /usr/bin/fuzzel-polkit-agent
+exec /usr/bin/lxqt-policykit-agent
 exec jamesdsp
-exec mako
+#exec mako
 #exec corectrl
 #exec /usr/bin/swayosd-server & disown
-exec /usr/bin/copyq & disown
+#exec /usr/bin/copyq & disown
 exec_always autotiling-rs -w 1 2 3 4 5 6 7 8 9
-exec /usr/bin/waybar -c $HOME/.config/waybar/sway/config.jsonc -s $HOME/.config/waybar/sway/style.css
+#exec /usr/bin/waybar -c $HOME/.config/waybar/sway/config.jsonc -s $HOME/.config/waybar/sway/style.css
 exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 exec wl-clip-persist --clipboard regular --reconnect-tries 0 >/dev/null 2>&1
+exec qs -c noctalia-shell
 # Sway variables
 
 include /etc/sway/config.d/*
@@ -271,7 +272,7 @@ popup_during_fullscreen smart
 
 # set floating (nontiling)for apps needing it:
 for_window [class="Yad" instance="yad"] floating enable
-for_window [app_id="thunar"] floating enable
+#for_window [app_id="thunar"] floating enable
 for_window [app_id="Alacritty"] floating enable
 for_window [app_id="foot"] floating enable
 for_window [app_id="org.gnome.Nautilus"] floating enable
