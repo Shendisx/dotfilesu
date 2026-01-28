@@ -1,13 +1,15 @@
 {
     "sources": [
         {
-            "name": "Official Noctalia Plugins",
+            "enabled": null,
+            "name": "Noctalia Plugins",
             "url": "https://github.com/noctalia-dev/noctalia-plugins"
         }
     ],
     "states": {
         "mangowc-layout-switcher": {
-            "enabled": true
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         }
     },
     "version": 1
